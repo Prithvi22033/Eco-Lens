@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Ecolens</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon1.jpg" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link
+      href="vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-tops">
+      <div class="container">
+        <h1><a href="main.html">ECOLENS</a></h1>
+        <h2>AI-Driven <span>Environemt Impact </span>Assessment</h2>
+        <div class="social-links">
+          <input type="text" placeholder="Write Your Name" id="inputValue" />
+          <a href="#about"><button class="btn" id="btn">Get Started</button></a>
+        </div>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#about">Predictor</a></li>
+            <li><a href="#video">Video</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+        <div class="section-title">
+          <h2 id="username">Welcome Aayush</h2>
+          <p>Put your values for prediction here</p>
+        </div>
+
+        <!-- ======= Form ======= -->
+        <div class="d-flex mb-3">
+          <div class="interests container mr-2">
+            <div class="section-title">
+              <h2>Your Selections</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mt-md-2 durationop">
+                <div class="icon-box">
+                  <img
+                    src="./img/unit/GWh.png"
+                    id="unitimg"
+                    class="mr-2"
+                    style="width: 35px"
+                    alt="aus"
+                  />
+                  <h3 id="durationh3">Project Duration</h3>
+                </div>
+              </div>
+              <div class="col-12 regionop">
+                <div class="icon-box">
+                  <img
+                    src="./img/region/World.png"
+                    id="regionimg"
+                    class="mr-2"
+                    style="width: 35px"
+                    alt="aus"
+                  />
+                  <h3 id="regionh3">Region</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 typeop">
+                <div class="icon-box">
+                  <img
+                    src="./img/category/Historical.png"
+                    id="categoryimg"
+                    class="mr-2"
+                    style="width: 35px"
+                    alt="aus"
+                  />
+                  <h3 id="typeh3">Project Type</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 impactop">
+                <div class="icon-box">
+                  <img
+                    src="./img/parameter/EV stock share.png"
+                    id="parameterimg"
+                    class="mr-2"
+                    style="width: 35px"
+                    alt="aus"
+                  />
+                  <h3 id="impacth3">Area Impact</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 modeop">
+                <div class="icon-box">
+                  <img
+                    src="./img/mode/Buses.png"
+                    id="modeimg"
+                    class="mr-2"
+                    style="width: 35px"
+                    alt="aus"
+                  />
+                  <h3 id="modeh3">Mode</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 water_Pollutionop">
+                <div class="icon-box">
+                  <i class="ri-database-2-line" style="color: #47aeff"></i>
+                  <h3 id="water_Pollutionh3">Water Pollution</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 air_Pollutionop">
+                <div class="icon-box">
+                  <i class="ri-database-2-line" style="color: #47aeff"></i>
+                  <h3 id="air_Pollutionh3">Air Pollution</h3>
+                </div>
+              </div>
+              <div class="col-12 mt-md-2 carbon_Footprintop">
+                <div class="icon-box">
+                  <i class="ri-gradienter-line" style="color: #ffa76e"></i>
+                  <h3 id="carbon_Footprinth3">Carbon Footprint</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="form" id="form">
+            <h2>Select Options Here!!</h2>
+            <select id="unit" name="duration">
+              <option value="" disabled selected hidden>
+                Select Project Duration(yrs)
+              </option>
+              <option value="1 yrs">1</option>
+              <option value="2 yrs">2</option>
+              <option value="3 yrs">3</option>
+              <option value="4 yrs">4</option>
+              <option value="5 yrs">5</option>
+              <option value="6 yrs">6</option>
+            </select>
+            <select id="region" name="region">
+              <option value="" disabled selected hidden>
+                Select the Region
+              </option>
+              <option value="Pune">Pune</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Banglore">Banglore</option>
+            </select>
+            <select id="category" name="type">
+              <option value="" disabled selected hidden>
+                Select the Project Type
+              </option>
+              <option value="Urban">Urban</option>
+              <option value="Rural">Rural</option>
+              <option value="Energy">Energy</option>
+              <option value="Transportation">Transportation</option>
+              <option value="Construction">Construction</option>
+              <option value="Water Management">Water Management</option>
+            </select>
+            <select id="parameter" name="impact">
+              <option value="" disabled selected hidden>
+                Select the Area Impact(sq.km)
+              </option>
+              <option value="0-20 square km">0-20</option>
+              <option value="20-40 square km">20-40</option>
+              <option value="40-60 square km">40-60</option>
+              <option value="60-80 square km">60-80</option>
+              <option value="80-100 square km">80-100</option>
+            </select>
+            <select id="mode" name="mode">
+              <option value="" disabled selected hidden>Select the Mode</option>
+              <option value="Implemented">Implmented</option>
+              <option value="Planned">Planned</option>
+              <option value="Not Applied">Not Applied</option>
+            </select>
+            <select id="powertrain" name="water_Pollution">
+              <option value="" disabled selected hidden>
+                Range of Water Pollution(tons/yr)
+              </option>
+              <option value="0-20 tons/year">0-20</option>
+              <option value="20-40 tons/year">20-40</option>
+              <option value="40-60 tons/year">40-60</option>
+              <option value="60-80 tons/year">60-80</option>
+              <option value="80-100 tons/year">80-100</option>
+            </select>
+            <select id="powertrain" name="air_Pollution">
+              <option value="" disabled selected hidden>
+                Range of Air Pollution(tons/yrs)
+              </option>
+              <option value="0-20 tons/year">0-20</option>
+              <option value="20-40 tons/year">20-40</option>
+              <option value="40-60 tons/year">40-60</option>
+              <option value="60-80 tons/year">60-80</option>
+              <option value="80-100 tons/year">80-100</option>
+            </select>
+            <select id="year" name="carbon_Footprint">
+              <option value="" disabled selected hidden>
+                Range of Carbon Footprint
+              </option>
+              <option value="1000-3000 tons/year">1000-3000</option>
+              <option value="3000-5000 tons/year">3000-5000</option>
+              <option value="5000-7000 tons/year">5000-7000</option>
+              <option value="7000-9000 tons/year">7000-9000</option>
+              <option value="9000-11000 tons/year">9000-11000</option>
+            </select>
+
+            <button class="btn" type="submit">Ask to Suggest</button>
+          </form>
+        </div>
+        <!-- ======= Interests ======= -->
+        <div class="interests container mb-3">
+          <div class="section-title">
+            <h2>Model Prediction</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c"></i>
+                <h3>Impact Value</h3>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="icon-box">
+                <i class="ri-bar-chart-box-line" style="color: transparent"></i>
+                <h3 id="valuepred"></h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-11 mt-2">
+              <div class="icon-box">
+                <i class="ri-bar-chart-box-line" style="color: transparent"></i>
+                <div>
+                  <p id="impactpred"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Video Section ======= -->
+    <section id="video" class="video">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+        <div class="section-title">
+          <h2 id="username">Welcome Aayush</h2>
+          <p>Here are some VIDEOS relevent to you.</p>
+        </div>
+
+        <!-- ======= Interests ======= -->
+        <div class="interests container mb-3">
+          <div class="section-title">
+            <h2>Video Links</h2>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c"></i>
+                <h3>Air Section</h3>
+              </div>
+              <div class="icon-box">
+                <ol>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=VQQeZw_c_s0"
+                      >Electrostatic Precipitator (ESP) - How it works!</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=9984GevAMuo"
+                      >Ajax LifeQuality: smart air quality monitor with CO2
+                      sensor</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=GIZBU5mX2t8"
+                      >How to Apply: Ecocoat Titan, Our Photocatalytic
+                      Coating</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=xJAB8f0u-80"
+                      >Toward practical electrochemical CO2 conversion to
+                      hydrocarbons</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=8L1gsVBEDzM"
+                      >Intro to Bioremediation: Microbes, Fungi, Plants, and
+                      Animals</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=DRV4YTHPRoE"
+                      >Enhancing Healthcare Safety: Advanced Air Purification
+                      Technologies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=2LGVht3Nja8"
+                      >EcoDrive Revolution: Embracing Sustainable Transportation
+                      with Electric Vehicles</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c"></i>
+                <h3>Water Section</h3>
+              </div>
+              <div class="icon-box">
+                <ol>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=wYkkLUckmg4"
+                      >Electrodialysis Explained</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=CvkF-trrWvA"
+                      >Atomic Layer Deposition Principle - an Introduction to
+                      ALD</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=YsKIscenkkw"
+                      >Sawdust absorbent test</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=V7DTWcKlZQA"
+                      >CONTROL OF WATER HYACINTH AND UTILIZATION</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=wVQPbki6m8g"
+                      >Making Graphitic Carbon Nitride</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=SkJWeIYN5UI"
+                      >Introduction To Waste Water Treatment Technologies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=36T1uHolMf4"
+                      >Xeriscape Made Easy - The ONLY Video You’ll Need to
+                      Watch:
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c"></i>
+                <h3>Carbon Footprint Section</h3>
+              </div>
+              <div class="icon-box">
+                <ol>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=ItCToQSSdhQ"
+                      >Is modular construction the future? | Hard Reset by
+                      Freethink</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=4xJzaBMyVkw"
+                      >CarbonBuilt Ultra-Low Carbon Concrete: How It Works</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=rK49UjDivWM"
+                      >How It’s Made: Cross Laminated Timber (CLT)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=Zl3YSPilT-w"
+                      >How It Works | How Autonomous Vehicles Work</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=5jejbfPKWrQ"
+                      >MaaS - Mobility-as-a-Service (Eng version with
+                      subtitle)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=DbyceAkPiAU"
+                      >Explaining Vehicle-To-Grid (V2G) Technology from Nuvve</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=bFb5TKVPSiY"
+                      >Hydrogen Fuel Cell: How It Works</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="interests container mb-3 mt-3">
+          <div class="section-title">
+            <h2>Links for SMART URBAN PLANNING</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <h3>1. Living Seawalls</h3>
+              </div>
+              <div class="icon-box">
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=vCD0o2XIo8w"
+                      >Living Seawalls - co-design for nature</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@LivingSeawalls"
+                      >Living Seawalls</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <h3>2. Urban Green Spaces</h3>
+              </div>
+              <div class="icon-box">
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=1SpI5VNG_DI"
+                      >The Value of Small Urban Green Spaces</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=6HhIaSdX1Nw"
+                      >The importance of urban green spaces</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <h3>3. Mixed Land Use:</h3>
+              </div>
+              <div class="icon-box">
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=L5-xjiWbt2g"
+                      >Land Transaction Tax (LTT) mixed use: tests to decide if
+                      land is not part of garden and grounds</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=Pg_REHwNEnE"
+                      >20 ACRES OF (MIXED USE) LAND WITH A STEADY RISE 5 MINS
+                      DRIVE TO KOFORIDUA AVAILABLE (AKWAPEM LAND)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=Wv92eZo2cAw"
+                      >Unleashing the Potential of Mixed Land Use
+                      Transforming</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-11">
+              <div class="icon-box">
+                <h3>4. Wildlife Corridors:</h3>
+              </div>
+              <div class="icon-box">
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=ttiI1dGxbxM"
+                      >Understanding Wildlife Corridors (English)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=Q9u6uxdcx8Y"
+                      >Understanding Wildlife Corridors</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const randomValues = [
+        "12.34567",
+        "23.45678",
+        "34.56789",
+        "45.67890",
+        "56.78901",
+        "67.89012",
+      ];
+
+      const suggestionValues = [
+        "<p>1. <b>Electrostatic Precipitators with Nanotechnology: </b>Enhance efficiency in capturing tiny particles using nanomaterial-coated plates, tackling PM2.5 pollution.</p> <p>2. <b>Electrodialysis (ED): </b>Utilized for removing chromium and arsenic from polluted water sources like textile dyeing or leather tanning. It can reclaim water through various processes like concentration, dilution, desalination, and more. However, it faces challenges like instability due to bubble generation at electrodes and vulnerability to voltage punctures. </p><p>3. <b>Prefabrication and Modular Construction: </b>Prefabricated building components reduce waste and construction time, thereby minimizing emissions associated with on-site activities.</p>",
+        "<p>1. <b>Smart Air Quality Monitoring Systems: </b>Real-time data aids in pollution control, empowering authorities and citizens to make informed decisions.</p><p>2. <b>Atomic Layer Deposition (ALD): </b>Frequently used in aquatic remediation to remove cyanide ions, heavy metals, and other toxins from wastewater effectively. ALD is a highly advanced form of chemical vapor deposition, known for its ability to work on complex surfaces and provide uniform deposition, making it attractive for thin film deposition in wastewater treatment. </p><p>3. <b>Low-Carbon Concrete: </b>Using alternatives to traditional cement, such as fly ash, limestone fines, ferrock, slag, or geopolymers, reduces the carbon footprint of concrete.</p>",
+        "<p>1. <b>Photocatalytic Coatings: </b>Sunlight-triggered reactions break down pollutants on urban surfaces, combating street-level air pollution. </p><p>2. <b>Sawdust-based Absorbents: </b>Sawdust, particularly when modified or treated, proves effective in removing contaminants like heavy metals, antibiotics, and dyes from water. It’s a scalable and affordable solution, with sulfonated sawdust and treated mahogany sawdust being notable examples.</p><p>3. <b>Cross-laminated Timber (CLT): </b>CLT, a type of engineered wood product, is gaining popularity as a sustainable alternative to concrete and steel for building construction, as it sequesters carbon rather than emitting it.</p>",
+        "<p>1. <b>Electrochemical Conversion of CO2: </b>Innovative techniques capture CO2 from emissions, transforming it into valuable resources like fuels and chemicals. </p> <p>2. <b>Water Hyacinth Utilization: </b>Despite being an invasive weed, water hyacinth contains valuable chemicals like cellulose and lignin, making it suitable for biofuel production. Additionally, it can be used for biosorption to reduce various contaminants in wastewater, contributing to water quality improvement.</p><p>3. <b>Autonomous Electric Vehicles (AEVs): </b>The convergence of electric vehicle technology with autonomous driving capabilities promises to revolutionize transportation, making it more energy-efficient, safer, and convenient.</p>",
+        "<p>1. <b>Biofiltration and Bioremediation: </b>Green solutions utilize plants and microorganisms to purify air, offering sustainable alternatives by breaking down toxic contaminets for pollution control. </p><p>2. <b>Graphitic Carbon Nitrite Membranes: </b>These membranes show promise in membrane separation technology due to their unique structural properties and catalytic activity. They’re effective in photodegradation and adsorption of organic pollutants from wastewater, offering a potential solution for water purification with low energy consumption. </p><p>3. <b>Mobility-as-a-Service (MaaS): </b>MaaS platforms integrate various transportation services like ride-sharing, public transit, bike-sharing, and car-sharing into a single accessible and sustainable mobility solution, reducing the overall carbon footprint of transportation.</p>",
+        "<p>1. <b>Advanced Air Purification Technologies: </b>HEPA filters, plasma ionization, and electrostatic purifiers remove pollutants from indoor and outdoor air, improving air quality. </p><p>2. <b>Industrial Wastewater Treatment Technologies: </b>: Various innovative technologies are being developed to address industrial wastewater pollution, such as phosphorus elimination plants and advanced treatment methods like electrodialysis. These efforts aim to reduce or eliminate industrial waste discharge into freshwater sources, crucial for long-term water quality improvement. </p><p>3. <b>Vehicle-to-Grid (V2G) Technology: </b>Electric vehicles equipped with V2G technology can discharge stored energy back to the grid during peak demand periods or supply power to buildings, effectively serving as mobile energy storage units and supporting grid stability.</p>",
+        "<p>1. <b>Electric Vehicles and Sustainable Transportation: </b>Adoption of EVs powered by renewable energy reduces air pollution from combustion engines, promoting sustainable urban transportation. </p><p>2. <b>Xeriscaping : </b> Various innovative technologies are being developed to address industrial wastewater pollution, such as phosphorus elimination plants and advanced treatment methods like electrodialysis. These efforts aim to reduce or eliminate industrial waste discharge into freshwater sources, crucial for long-term water quality improvement. </p><p>4. <b>Hydrogen Fuel Cells: </b>Hydrogen fuel cell technology for vehicles offers zero-emission transportation with longer ranges and shorter refueling times compared to battery electric vehicles, making it a promising alternative for decarbonizing transportation.</p>",
+      ];
+
+      function getRandomValue() {
+        const randomIndex = Math.floor(Math.random() * randomValues.length);
+        return randomValues[randomIndex];
+      }
+      function getRandomSugg() {
+        const randomIndex = Math.floor(Math.random() * suggestionValues.length);
+        return suggestionValues[randomIndex];
+      }
+
+      function setRandomValues() {
+        // Assign random values to the predicted value and impact sections
+        document.getElementById("valuepred").textContent = getRandomValue();
+        document.getElementById("impactpred").innerHTML = getRandomSugg();
+      }
+
+      // Listen for form submission
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent page refresh
+
+          setRandomValues(); // Set random values
+
+          // Scroll to the prediction section smoothly
+          document.getElementById("prediction-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="vendor/counterup/counterup.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/venobox/venobox.min.js"></script>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/70fa5628c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
